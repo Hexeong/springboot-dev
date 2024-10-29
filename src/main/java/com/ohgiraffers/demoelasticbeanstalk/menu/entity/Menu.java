@@ -2,10 +2,12 @@ package com.ohgiraffers.demoelasticbeanstalk.menu.entity;
 
 import jakarta.persistence.*;
 import lombok.Getter;
+import lombok.Setter;
 
 @Table(name = "TBL_MENU")
 @Entity(name = "Menu")
 @Getter
+@Setter
 public class Menu {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
